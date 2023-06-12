@@ -24,7 +24,7 @@
 	Class.forName("com.mysql.jdbc.Driver");
 	conn = DriverManager.getConnection(url, id, pwd);
 	
-	String emp_name = (String)session.getAttribute("emp_name");
+	String emp_name = request.getParameter("emp_name");
 	String ComCode = request.getParameter("depart");
 	String Depart = "";
 	if(ComCode != null){

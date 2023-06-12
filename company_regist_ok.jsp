@@ -109,8 +109,8 @@
 %>
 	<script>
 		alert('등록되었습니다.');
-		window.location.href='company_regist_confirm.jsp';
-		//history.back();
+		//window.location.href='company_regist_confirm.jsp';
+		history.back();
 	</script>
 
 

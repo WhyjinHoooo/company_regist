@@ -15,10 +15,18 @@
 			}else{
 				return true;
 			}
-			
-					
-				
-		
+		}
+		function Master(){
+			var master_code = "MASTER";
+			var user_input = prompt("코드를 입력해주세요"+"");
+			if(master_code != user_input){
+				alert("관리자 코드를 다시 입력하세요");
+				return false;
+			} else{
+				alert("관리자 페이지로 이동합니다.");
+				window.location.href='company_regist_confirm.jsp';
+				return true;
+			}
 		}
 	</script>
 </head>
@@ -58,7 +66,10 @@
 		</tr>
 	</table>
 	</form>
-		
-		
+	<center>
+		<tr>
+			<button class="button" onClick="return Master()">master</button>
+		</tr>
+	</center>	
 </body>
 </html>

@@ -37,7 +37,7 @@
 	Class.forName("com.mysql.jdbc.Driver");
 	conn = DriverManager.getConnection(url, id, pwd);
 
-	String emp_name = (String)session.getAttribute("emp_name");	
+	String emp_name = request.getParameter("target");	
 	String ComCode = null;
 	String Depart = null;
 	
@@ -77,7 +77,7 @@
 		
 		<tr class="input"><th>사원 이름: </th>
 			 <td class="info_input">
-			 	<input type="text" name="emp_name" id="emp_name" value=<%=emp_name %> readonly>
+			 	<input type="text" name="emp_name" id="emp_name" value=<%=emp_name %> >
 			 </td>
 		</tr>
 		

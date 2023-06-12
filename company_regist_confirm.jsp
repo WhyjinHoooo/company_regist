@@ -75,12 +75,14 @@
 			%>	
 		</table>	
 	</center>
+<!--  
 	<center>
 	<table>
 		<tr><td style="text-align: center;"><form action="company_regist.jsp" method="get" name="regist_back" id="regist_back" size="20">
 			<input type="submit" value="재입력">
 		</form></td></tr>
 	</table>
-	</center>		
+	</center>
+-->		
 </body>
 </html>

@@ -14,17 +14,17 @@
 <title>Insert title here</title>
   
 	<script>
-<!--
-		function EmpName_delete(id) {
-			if (confirm(id + "을(를) 삭제하시겠습니까?") == true) {
-				location.href="company_regist_delete.jsp?target=" + id;
+
+		function modifyPage() {
+			if (confirm("다른 사원의 정보를 수정하시겠습니까?")) {
+				location.href="company_regist_confirm.jsp";
 			} else {
 				return false;
 			}
 		}
--->		
+		
 		function initPage() {
-			if (confirm("첫 페이지로 돌아가시겠습니까?") == true) {
+			if (confirm("첫 페이지로 돌아가시겠습니까?")) {
 				location.href="company_regist.jsp";
 			} else {
 				return false;
@@ -77,9 +77,13 @@
 		</table>	
 	</center>
 	<center>
-		<tr><td style="text-align: center;">
-			<button class="button" onClick="return initPage()">초기화면</button>
-		</td></tr>
+		<tr>
+			<td style="text-align: center;">
+				<button class="button" onClick="return initPage()">초기화면</button>
+			</td>
+			<td style="text-align: center;">
+				<button class="button" onClick="return modifyPage()">재입력</button>
+		</tr>
 		<script>
 			session.removeAttribute("emp_name");
 		</script>
